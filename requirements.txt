@@ -144,7 +144,6 @@ pytz==2022.7.1
 pyviz-comms==2.2.1
 PyWavelets==1.4.1
 pypiwin32==223
-pywinpty==2.0.10
 PyYAML==6.0
 pyzmq==25.0.0
 qdldl==0.1.5.post2
