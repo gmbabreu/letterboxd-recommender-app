@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Letterboxd Movie Recommender</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin: 5px;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .movie-index {
+            display: inline-block;
+            width: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .movie-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Letterboxd Movie Recommender</h1>
+    <h2>Recommendations:</h2>
+    <ul>
+        {% for movie in recommendations %}
+            <li>
+                <span class="movie-index">{{ loop.index }}.</span>
+                <span class="movie-title">{{ movie }}</span>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
