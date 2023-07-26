@@ -32,6 +32,20 @@
         button:hover {
             background-color: #0056b3;
         }
+        .loading-message {
+            font-style: italic;
+            color: #999;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .github-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .github-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -40,7 +54,11 @@
         <label for="username">Enter your Letterboxd username:</label><br>
         <input type="text" id="username" name="username" required>
         <br>
-        <button type="submit">Recommend</button>
+        <button type="submit">Get Recommendations</button>
     </form>
+    <p class="loading-message">Please note that generating recommendations might take a while depending on the number of movies in your Letterboxd profile.</p>
+    <div class="github-link">
+        <a href="https://github.com/gmbabreu/letterboxd-recommender-app" target="_blank">View on GitHub</a>
+    </div>
 </body>
 </html>
